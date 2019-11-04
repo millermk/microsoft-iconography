@@ -1,50 +1,56 @@
 import React from 'react';
-import { Stack, Text, Link, FontWeights } from 'office-ui-fabric-react';
+import { Stack, Fabric, FontSizes, Toggle } from 'office-ui-fabric-react';
+import { getIcons } from './Icon';
+import { IconPresenter } from './IconPresenter';
 
-import logo from './fabric.png';
+interface AppProps {}
 
-const boldStyle = {
-  root: { fontWeight: FontWeights.semibold }
-};
+interface AppState {
+  groupingEnabled: boolean;
+}
 
-export const App: React.FunctionComponent = () => {
-  return (
-    <Stack
-      horizontalAlign="center"
-      verticalAlign="center"
-      verticalFill
-      styles={{
-        root: {
-          width: '960px',
-          margin: '0 auto',
-          textAlign: 'center',
-          color: '#605e5c'
-        }
-      }}
-      gap={15}
-    >
-      <img src={logo} alt="logo" />
-      <Text variant="xxLarge" styles={boldStyle}>
-        Welcome to Your UI Fabric App
-      </Text>
-      <Text variant="large">For a guide on how to customize this project, check out the UI Fabric documentation.</Text>
-      <Text variant="large" styles={boldStyle}>
-        Essential Links
-      </Text>
-      <Stack horizontal gap={15} horizontalAlign="center">
-        <Link href="https://developer.microsoft.com/en-us/fabric">Docs</Link>
-        <Link href="https://stackoverflow.com/questions/tagged/office-ui-fabric">Stack Overflow</Link>
-        <Link href="https://github.com/officeDev/office-ui-fabric-react/">Github</Link>
-        <Link href="https://twitter.com/officeuifabric">Twitter</Link>
-      </Stack>
-      <Text variant="large" styles={boldStyle}>
-        Design System
-      </Text>
-      <Stack horizontal gap={15} horizontalAlign="center">
-        <Link href="https://developer.microsoft.com/en-us/fabric#/styles/icons">Icons</Link>
-        <Link href="https://developer.microsoft.com/en-us/fabric#/styles/typography">Typography</Link>
-        <Link href="https://developer.microsoft.com/en-us/fabric#/styles/themegenerator">Theme</Link>
-      </Stack>
-    </Stack>
-  );
-};
+export default class App extends React.Component<AppProps, AppState> {
+  constructor(props: AppProps) {
+    super(props);
+
+    this.state = {groupingEnabled: false}
+  }
+
+  toggleGrouping = () => {
+    this.setState({groupingEnabled: !this.state.groupingEnabled});
+  }
+
+  render() {
+    return (
+      <Fabric style={{margin: '0px 20px 0px 20px'}}>
+        <Stack tokens={{childrenGap: "20px 0px"}}>
+          <Stack.Item key="AppHeader">
+            <h1>Microsoft Fluent Design Iconography</h1>
+            <p>With the <a href="https://www.microsoft.com/design/fluent/">Fluent Design System</a>, Microsoft took a bold new approach to product icons and logos. Compared to the previous flat and monochromatic approach, the new style adds depth, color, and gradients. This page shows a selection of icons created under this new system.</p>
+            <Toggle label="Grouping" checked={this.state.groupingEnabled} onText="On" offText="Off" onClick={this.toggleGrouping} />
+          </Stack.Item>
+          {
+            getIcons(this.state.groupingEnabled).map(g => (
+              <Stack.Item key={"IconGroup" + g.name}>
+                <Stack horizontalAlign='start'>
+                  <Stack.Item>
+                    <h2>{g.name}</h2>
+                  </Stack.Item>
+                  <Stack.Item>
+                  <Stack horizontal wrap horizontalAlign='start' tokens={{childrenGap: "20px 20px"}}>
+                    {g.icons.map(i => (
+                      <Stack.Item key={i.src}>
+                        <IconPresenter icon={i}/>
+                      </Stack.Item>
+                    ))}
+                  </Stack>
+                  </Stack.Item>
+                </Stack>
+              </Stack.Item>
+            ))
+          }
+        </Stack>
+      </Fabric>
+    );
+  }
+}
