@@ -12,7 +12,7 @@ export const IconPresenter: React.FunctionComponent<IconPresenterProps> = (props
   return (
     <Stack tokens={{maxWidth:size}}>
       <Stack.Item align="center">
-        <Image src={props.icon.src} imageFit={ImageFit.contain} width={size} height={size}/>
+        <Image src={String(process.env.PUBLIC_URL) + props.icon.src} imageFit={ImageFit.contain} width={size} height={size}/>
       </Stack.Item>
       <Stack.Item align="center">
         <span style={{ fontSize: FontSizes.medium, textAlign: 'center' }}>

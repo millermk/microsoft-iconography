@@ -1,7 +1,6 @@
 {
   "name": "microsoft-iconography-single",
-  "version": "0.1.0",
-  "license": "MIT",
+  "homepage": "https://millermk.github.io/microsoft-iconography/",
   "main": "lib-commonjs/index.js",
   "module": "lib/index.js",
   "scripts": {
@@ -10,7 +9,8 @@
     "start": "just-scripts start",
     "test": "just-scripts test",
     "change": "npx beachball change",
-    "gen": "npx plop"
+    "gen": "npx plop",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "just-stack-react": "^1.0.0",
-    "just-scripts": "^0.27.0"
+    "just-scripts": "^0.27.0",
+    "gh-pages": "^2.1.1"
   }
 }

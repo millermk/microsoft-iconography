@@ -1,4 +1,5 @@
 const { webpackConfig, webpackMerge, htmlOverlay } = require('just-scripts');
+const webpack = require('webpack');
 
 module.exports = webpackMerge(
   webpackConfig,
@@ -6,6 +7,13 @@ module.exports = webpackMerge(
     template: 'public/index.html'
   }),
   {
-    // Here you can custom webpack configurations
+    output: {
+      publicPath: '/microsoft-iconography/'
+    },
+    plugins : [
+      new webpack.DefinePlugin({
+        'process.env.PUBLIC_URL': '"/microsoft-iconography"'
+      })
+    ]
   }
 );

@@ -15,87 +15,87 @@ export function getIcons(grouped: boolean): IconGroup[] {
             icons: [
                 {
                     name: "Office",
-                    src: "/public/assets/images/office.png"
+                    src: "/public/static/office.png"
                 },
                 {
                     name: "Access",
-                    src: "/public/assets/images/office-access.svg"
+                    src: "/public/static/office-access.svg"
                 },
                 {
                     name: "Excel",
-                    src: "/public/assets/images/office-excel.svg"
+                    src: "/public/static/office-excel.svg"
                 },
                 {
                     name: "Exchange",
-                    src: "/public/assets/images/office-exchange.svg"
+                    src: "/public/static/office-exchange.svg"
                 },
                 {
                     name: "OneNote",
-                    src: "/public/assets/images/office-onenote.svg"
+                    src: "/public/static/office-onenote.svg"
                 },
                 {
                     name: "Outlook",
-                    src: "/public/assets/images/office-outlook.svg"
+                    src: "/public/static/office-outlook.svg"
                 },
                 {
                     name: "PowerPoint",
-                    src: "/public/assets/images/office-powerpoint.svg"
+                    src: "/public/static/office-powerpoint.svg"
                 },
                 {
                     name: "SharePoint",
-                    src: "/public/assets/images/office-sharepoint.svg"
+                    src: "/public/static/office-sharepoint.svg"
                 },
                 {
                     name: "Sway",
-                    src: "/public/assets/images/office-sway.png"
+                    src: "/public/static/office-sway.png"
                 },
                 {
                     name: "Teams",
-                    src: "/public/assets/images/office-teams.svg"
+                    src: "/public/static/office-teams.svg"
                 },
                 {
                     name: "Visio",
-                    src: "/public/assets/images/office-visio.svg"
+                    src: "/public/static/office-visio.svg"
                 },
                 {
                     name: "Word",
-                    src: "/public/assets/images/office-word.svg"
+                    src: "/public/static/office-word.svg"
                 },
                 {
                     name: "Project",
-                    src: "/public/assets/images/office-project.svg"
+                    src: "/public/static/office-project.svg"
                 },
                 {
                     name: "Forms",
-                    src: "/public/assets/images/office-forms.svg"
+                    src: "/public/static/office-forms.svg"
                 },
                 {
                     name: "Publisher",
-                    src: "/public/assets/images/office-publisher.svg"
+                    src: "/public/static/office-publisher.svg"
                 },
                 {
                     name: "Planner",
-                    src: "/public/assets/images/office-planner.svg"
+                    src: "/public/static/office-planner.svg"
                 },
                 {
                     name: "Stream",
-                    src: "/public/assets/images/office-stream.svg"
+                    src: "/public/static/office-stream.svg"
                 },
                 {
                     name: "Todo",
-                    src: "/public/assets/images/office-todo.svg"
+                    src: "/public/static/office-todo.svg"
                 },
                 {
                     name: "Whiteboard",
-                    src: "/public/assets/images/office-whiteboard.svg"
+                    src: "/public/static/office-whiteboard.svg"
                 },
                 {
                     name: "Skype",
-                    src: "/public/assets/images/office-skype.svg"
+                    src: "/public/static/office-skype.svg"
                 },
                 {
                     name: "OneDrive",
-                    src: "/public/assets/images/office-onedrive.svg"
+                    src: "/public/static/office-onedrive.svg"
                 }
             ]
         },
@@ -104,27 +104,27 @@ export function getIcons(grouped: boolean): IconGroup[] {
             icons: [
                 {
                     name: "Dynamics 365 Business Central",
-                    src: "/public/assets/images/dynamics-365businesscentral.png"
+                    src: "/public/static/dynamics-365businesscentral.png"
                 },
                 {
                     name: "Dynamics 365 Guides",
-                    src: "/public/assets/images/dynamics-365guides.png"
+                    src: "/public/static/dynamics-365guides.png"
                 },
                 {
                     name: "Dynamics 365 Layout",
-                    src: "/public/assets/images/dynamics-365layout.png"
+                    src: "/public/static/dynamics-365layout.png"
                 },
                 {
                     name: "Dynamics 365 Import Tool",
-                    src: "/public/assets/images/dynamics-365importtool.png"
+                    src: "/public/static/dynamics-365importtool.png"
                 },
                 {
                     name: "Dynamics 365 Remote Assist",
-                    src: "/public/assets/images/dynamics-365remoteassist.png"
+                    src: "/public/static/dynamics-365remoteassist.png"
                 },
                 {
                     name: "Dynamics 365 Product Visualize",
-                    src: "/public/assets/images/dynamics-365productvisualize.png"
+                    src: "/public/static/dynamics-365productvisualize.png"
                 }
             ]
         },
@@ -133,79 +133,79 @@ export function getIcons(grouped: boolean): IconGroup[] {
             icons: [
                 {
                     name: "Mail",
-                    src:"/public/assets/images/win-mail.png"
+                    src:"/public/static/win-mail.png"
                 },
                 {
                     name: "Calendar",
-                    src:"/public/assets/images/win-calendar.png"
+                    src:"/public/static/win-calendar.png"
                 },
                 {
                     name: "People",
-                    src:"/public/assets/images/win-people.png"
+                    src:"/public/static/win-people.png"
                 },
                 {
                     name: "Groove Music",
-                    src:"/public/assets/images/win-groove.png"
+                    src:"/public/static/win-groove.png"
                 },
                 {
                     name: "Movies & TV",
-                    src:"/public/assets/images/win-moviestv.png"
+                    src:"/public/static/win-moviestv.png"
                 },
                 {
                     name: "Photos",
-                    src:"/public/assets/images/win-photos.png"
+                    src:"/public/static/win-photos.png"
                 },
                 {
                     name: "Calculator",
-                    src:"/public/assets/images/win-calculator.png"
+                    src:"/public/static/win-calculator.png"
                 },
                 {
                     name: "Camera",
-                    src:"/public/assets/images/win-camera.png"
+                    src:"/public/static/win-camera.png"
                 },
                 {
                     name: "Clock",
-                    src:"/public/assets/images/win-clock.png"
+                    src:"/public/static/win-clock.png"
                 },
                 {
                     name: "Recorder",
-                    src:"/public/assets/images/win-recorder.png"
+                    src:"/public/static/win-recorder.png"
                 },
                 {
                     name: "Snip & Sketch",
-                    src:"/public/assets/images/win-snipnsketch.png"
+                    src:"/public/static/win-snipnsketch.png"
                 },
                 {
                     name: "Cellular",
-                    src:"/public/assets/images/win-cellular.png"
+                    src:"/public/static/win-cellular.png"
                 },
                 {
                     name: "Your Phone",
-                    src:"/public/assets/images/win-yourphone.png"
+                    src:"/public/static/win-yourphone.png"
                 },
                 {
                     name: "Maps",
-                    src:"/public/assets/images/win-maps.png"
+                    src:"/public/static/win-maps.png"
                 },
                 {
                     name: "Weather",
-                    src:"/public/assets/images/win-weather.png"
+                    src:"/public/static/win-weather.png"
                 },
                 {
                     name: "Solitaire",
-                    src:"/public/assets/images/win-solitaire.png"
+                    src:"/public/static/win-solitaire.png"
                 },
                 {
                     name: "Microsoft Edge",
-                    src:"/public/assets/images/win-edge.png"
+                    src:"/public/static/win-edge.png"
                 },
                 {
                     name: "Explorer",
-                    src:"/public/assets/images/win-explorer.png"
+                    src:"/public/static/win-explorer.png"
                 },
                 {
                     name: "Feedback",
-                    src:"/public/assets/images/win-feedback.png"
+                    src:"/public/static/win-feedback.png"
                 }
             ]
         },
@@ -214,15 +214,15 @@ export function getIcons(grouped: boolean): IconGroup[] {
             icons: [
                 {
                     name: "Terminal",
-                    src:"/public/assets/images/win-terminal.png"
+                    src:"/public/static/win-terminal.png"
                 },
                 {
                     name: "Visual Studio Code",
-                    src:"/public/assets/images/win-vscode.png"
+                    src:"/public/static/win-vscode.png"
                 },
                 {
                     name: "Visual Studio",
-                    src:"/public/assets/images/win-visualstudio.svg"
+                    src:"/public/static/win-visualstudio.svg"
                 }
             ]
         },
@@ -231,35 +231,35 @@ export function getIcons(grouped: boolean): IconGroup[] {
             icons: [
                 {
                     name: "Launcher",
-                    src:"/public/assets/images/mobile-launcher.png"
+                    src:"/public/static/mobile-launcher.png"
                 },
                 {
                     name: "Managed Home Screen",
-                    src:"/public/assets/images/mobile-enterpriselauncher.png"
+                    src:"/public/static/mobile-enterpriselauncher.png"
                 },
                 {
                     name: "Your Phone Companion",
-                    src:"/public/assets/images/mobile-yourphonecompanion.png"
+                    src:"/public/static/mobile-yourphonecompanion.png"
                 },
                 {
                     name: "Hyperlapse",
-                    src:"/public/assets/images/mobile-hyperlapse.png"
+                    src:"/public/static/mobile-hyperlapse.png"
                 },
                 {
                     name: "Bing Advertising",
-                    src:"/public/assets/images/mobile-advertising.png"
+                    src:"/public/static/mobile-advertising.png"
                 },
                 {
                     name: "Kaizala",
-                    src:"/public/assets/images/mobile-kaizala.png"
+                    src:"/public/static/mobile-kaizala.png"
                 },
                 {
                     name: "Mail",
-                    src:"/public/assets/images/mobile-mail.png"
+                    src:"/public/static/mobile-mail.png"
                 },
                 {
                     name: "Calendar",
-                    src:"/public/assets/images/mobile-calendar.png"
+                    src:"/public/static/mobile-calendar.png"
                 }
             ]
         }
