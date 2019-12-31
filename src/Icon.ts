@@ -206,6 +206,10 @@ export function getIcons(grouped: boolean): IconGroup[] {
                 {
                     name: "Feedback",
                     src:"/public/static/win-feedback.png"
+                },
+                {
+                    name: "Microsoft News",
+                    src: "/public/static/win-news.svg"
                 }
             ]
         },
